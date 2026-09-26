@@ -1,20 +1,20 @@
 {
   "__id": "sl-0001_revocation",
   "signature": {
+    "signedAt": "2026-09-26T17:49:00.950Z",
     "alg": "ES256",
-    "keyId": "bc33d183b46b062f",
-    "signedAt": "2026-09-25T18:34:01.635Z",
     "canonicalForm": "inkid-statuslist-v1",
-    "signature": "MEQCIEoIRW0uJSGMX0NDtQ/SgUa8/TDSw/TOM9VkM8cBhbAEAiBn8FoZ9gyoPlspmv8WeW65qhHYv7vcjjFAR2hqaHEzKQ=="
+    "keyId": "bc33d183b46b062f",
+    "signature": "MEUCIQD1ZkS+HPG2V6kfX6kGMyalu0TdBSJfUbTlKXeCt7gz+wIgO2bZ/gS2IPq+2dMa/n2aQZFGnlUCmoZkqQFg5IlxAF4="
   },
-  "statusPurpose": "revocation",
-  "recipe": "inkid-statuslist-v1: a bitstring of 131072 entries, one per record slot. Entry i is bit (7 - (i mod 8)) of byte floor(i / 8) — the most significant bit of each byte is the first, so entry 0 is the leftmost bit of byte 0. A 1 means the purpose named by statusPurpose applies to the record holding that slot; a 0 means it does not, and says nothing else about the record. The bitstring is GZIP-compressed (RFC 1952) with the header MTIME, XFL and OS bytes fixed to 0x00000000, 0x00 and 0xFF so one set of bits always produces one string; a decoder MUST accept any valid GZIP stream. The result is base64url-encoded without padding (RFC 4648 section 5) and prefixed with the multibase character 'u'. The document is signed with ES256 over the UTF-8 bytes of canonicalJson(document minus the signature field) — the same canonicalisation as inkid-orgsig-v3 — under the key named by signature.keyId and published at org_keys/{keyId}.",
-  "list": "sl-0001",
-  "issuedAt": "2026-09-25T18:34:01.289Z",
-  "setCount": 0,
-  "id": "sl-0001_revocation",
   "capacity": 131072,
+  "setCount": 0,
+  "list": "sl-0001",
+  "recipe": "inkid-statuslist-v1: a bitstring of 131072 entries, one per record slot. Entry i is bit (7 - (i mod 8)) of byte floor(i / 8) — the most significant bit of each byte is the first, so entry 0 is the leftmost bit of byte 0. A 1 means the purpose named by statusPurpose applies to the record holding that slot; a 0 means it does not, and says nothing else about the record. The bitstring is GZIP-compressed (RFC 1952) with the header MTIME, XFL and OS bytes fixed to 0x00000000, 0x00 and 0xFF so one set of bits always produces one string; a decoder MUST accept any valid GZIP stream. The result is base64url-encoded without padding (RFC 4648 section 5) and prefixed with the multibase character 'u'. The document is signed with ES256 over the UTF-8 bytes of canonicalJson(document minus the signature field) — the same canonicalisation as inkid-orgsig-v3 — under the key named by signature.keyId and published at org_keys/{keyId}.",
+  "validUntil": "2026-09-27T17:49:00.723Z",
   "encodedList": "uH4sIAAAAAAAA_-3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAIC3AYbSVKsAQAAA",
-  "sourceReadAt": "2026-09-25T18:34:01.289Z",
-  "validUntil": "2026-09-26T18:34:01.289Z"
+  "statusPurpose": "revocation",
+  "sourceReadAt": "2026-09-26T17:49:00.723Z",
+  "issuedAt": "2026-09-26T17:49:00.723Z",
+  "id": "sl-0001_revocation"
 }
