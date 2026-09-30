@@ -2,19 +2,19 @@
   "__id": "sl-0001_dispute",
   "signature": {
     "canonicalForm": "inkid-statuslist-v1",
-    "signedAt": "2026-09-29T19:19:01.264Z",
-    "alg": "ES256",
     "keyId": "bc33d183b46b062f",
-    "signature": "MEQCIAk40ciYgmLI5F/X6mSW3460YSoJez1njW09caAmyqvBAiBFJD9dQ8ET8wYSiGiTTNIDeQ5D2rr5mCXzQZa0N2EGcQ=="
+    "signedAt": "2026-09-30T19:19:01.347Z",
+    "alg": "ES256",
+    "signature": "MEQCIDp41eYRrkr3LH5Bps+BfUSheOSC29kYnsftNTrd6cU3AiArXWDRjLDCIRwjeaxe4b8A9/nHeoR1gOVsVbNJeKf8eQ=="
   },
-  "sourceReadAt": "2026-09-29T19:19:00.790Z",
-  "encodedList": "uH4sIAAAAAAAA_-3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAIC3AYbSVKsAQAAA",
-  "setCount": 0,
   "id": "sl-0001_dispute",
-  "issuedAt": "2026-09-29T19:19:00.790Z",
-  "recipe": "inkid-statuslist-v1: a bitstring of 131072 entries, one per record slot. Entry i is bit (7 - (i mod 8)) of byte floor(i / 8) — the most significant bit of each byte is the first, so entry 0 is the leftmost bit of byte 0. A 1 means the purpose named by statusPurpose applies to the record holding that slot; a 0 means it does not, and says nothing else about the record. The bitstring is GZIP-compressed (RFC 1952) with the header MTIME, XFL and OS bytes fixed to 0x00000000, 0x00 and 0xFF so one set of bits always produces one string; a decoder MUST accept any valid GZIP stream. The result is base64url-encoded without padding (RFC 4648 section 5) and prefixed with the multibase character 'u'. The document is signed with ES256 over the UTF-8 bytes of canonicalJson(document minus the signature field) — the same canonicalisation as inkid-orgsig-v3 — under the key named by signature.keyId and published at org_keys/{keyId}.",
-  "validUntil": "2026-09-30T19:19:00.790Z",
+  "list": "sl-0001",
+  "encodedList": "uH4sIAAAAAAAA_-3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAIC3AYbSVKsAQAAA",
   "statusPurpose": "dispute",
+  "recipe": "inkid-statuslist-v1: a bitstring of 131072 entries, one per record slot. Entry i is bit (7 - (i mod 8)) of byte floor(i / 8) — the most significant bit of each byte is the first, so entry 0 is the leftmost bit of byte 0. A 1 means the purpose named by statusPurpose applies to the record holding that slot; a 0 means it does not, and says nothing else about the record. The bitstring is GZIP-compressed (RFC 1952) with the header MTIME, XFL and OS bytes fixed to 0x00000000, 0x00 and 0xFF so one set of bits always produces one string; a decoder MUST accept any valid GZIP stream. The result is base64url-encoded without padding (RFC 4648 section 5) and prefixed with the multibase character 'u'. The document is signed with ES256 over the UTF-8 bytes of canonicalJson(document minus the signature field) — the same canonicalisation as inkid-orgsig-v3 — under the key named by signature.keyId and published at org_keys/{keyId}.",
+  "sourceReadAt": "2026-09-30T19:19:00.747Z",
+  "validUntil": "2026-10-01T19:19:00.747Z",
+  "setCount": 0,
   "capacity": 131072,
-  "list": "sl-0001"
+  "issuedAt": "2026-09-30T19:19:00.747Z"
 }
